@@ -1,0 +1,20 @@
+<ion-view view-title="Pedidos">
+    <ion-nav-buttons side="secondary">
+        <button class="button button-icon icon ion-ios-plus-empty" ng-click="openModal()"></button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-refresher
+                pulling-text="Solte para atualizar"
+                on-refresh="loadPedidos()">
+        </ion-refresher>
+        <ion-list>
+            <ion-item ng-repeat="pedido in pedidos" href="#/app/pedido/{{pedido.id}}">
+                <h2>Pedido #{{pedido.id}}</h2>
+                <span class="badge balanced">{{pedido.valor | currency}}</span>
+                <ion-option-button class="button-assertive" ng-click="delete(pedido.id)">
+                    Delete
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

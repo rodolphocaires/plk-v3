@@ -1,0 +1,63 @@
+/* Empty. Add your own CSS if you like */
+.item {
+    border-color: #eaeaea;
+}
+.icon-accessory.calm {
+    color: #24C7B1;
+}
+
+.avatar-big > img:first-child {
+    top: 10px;
+    left: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+.royal-bg {
+    color: #fff !important;
+}
+.login-bg {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.login-actions {
+    position: absolute;
+    top: 82vh;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-content {
+    box-shadow: -1px 0px 2px rgba(100, 100, 100, 0.2), 1px 0px 2px rgba(100, 100, 100, 0.2)
+}
+
+.login-button {
+    width: 150px;
+}
+
+.menu-picture {
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#map-view .scroll {
+    height: 100%;
+}
+
+@media all and (orientation: portrait) {
+    .login-bg {
+        background-image: url('../img/login-bg.jpg');
+    }
+}
+
+@media all and (orientation: landscape) {
+    .login-bg {
+        background-image: url('http://placehold.it/600x400');
+    }
+}

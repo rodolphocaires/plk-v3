@@ -1,0 +1,15 @@
+<ion-modal-view ng-controller="NovoPedidoCtrl">
+    <ion-header-bar class="bar bar-balanced">
+        <button class="button button-icon icon ion-ios-close-empty" ng-click="cancel()"></button>
+        <h1 class="title">Novo pedido</h1>
+        <button class="button button-icon icon ion-ios-checkmark-empty" ng-click="save()"></button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Valor</span>
+                <input type="text" placeholder="Valor" ng-model="pedido.valor">
+            </label>
+        </div>
+    </ion-content>
+</ion-modal-view>
